@@ -44,13 +44,19 @@ a {
 
 
 .copyright-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 }
 
 .copyright {
+	font-size: clamp(9px, 2vw, 12px);
 	font-size: clamp(0.6rem, 2vw, 0.8rem);
 	font-weight: 300;
 	color: #262C33;
@@ -59,6 +65,7 @@ a {
 
 .copyright-link {
 	text-decoration: underline;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 
@@ -68,12 +75,19 @@ a {
 
 .body {
 	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .body-container {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 }
 
 
@@ -83,15 +97,23 @@ a {
 =================*/
 
 header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: nowrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
 	height: 100px;
 	padding: 0 4vw;
 }
 
 h1 {
+	font-size: clamp(21px, 1.3vw, 27px);
 	font-size: clamp(1.4rem, 1.3vw, 1.8rem);
 	/*font-family: 'Overlock', cursive;*/
 	font-family: 'Merriweather', serif;
@@ -99,6 +121,7 @@ h1 {
 }
 
 .header-sub-heading {
+	font-size: clamp(10.5px, 0.7vw, 15px);
 	font-size: clamp(0.7rem, 0.7vw, 1rem);
 	color: var(--main-colour);
 	white-space: nowrap;
@@ -109,17 +132,21 @@ h1 {
 .nav-link {
     margin: 0 1vw;
     font-family: 'Roboto', sans-serif;
+    font-size: 17.25px;
     font-size: 1.15rem;
+    -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
     color: #4a4a4a;
 }
 
 .nav-link:hover {
 	color: var(--main-colour);
+	-webkit-transition: 0.2s ease;
 	transition: 0.2s ease;
 }
 
 .current-page {
+	font-size: 18.75px;
 	font-size: 1.25rem;
 	font-weight: 500;
 	color: var(--main-colour) !important;
@@ -215,9 +242,15 @@ h1 {
 .intro-section {
 	background-position: center;
 	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .intro-height {
@@ -241,9 +274,14 @@ h1 {
 
 .intro-info-container {
     z-index: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /*width: 70vw;*/
     /*max-width: 1200px;*/
     height: 100%;
@@ -262,6 +300,7 @@ h1 {
 
 .intro-paragraph {
     line-height: 1.3;
+    font-size: clamp(12.75px, 1.5vw, 16.5px);
     font-size: clamp(0.85rem, 1.5vw, 1.1rem);
     font-weight: 300;
     color: #262C33;
@@ -269,6 +308,7 @@ h1 {
 
 .intro-opening {
     font-weight: 700;
+    font-size: clamp(13.5px, 1.6vw, 22.5px);
     font-size: clamp(0.9rem, 1.6vw, 1.5rem);
     color: #303133;
     font-family: 'Merriweather', serif;
@@ -280,6 +320,7 @@ h1 {
 	color: var(--click-colour);
 	font-weight: 300;
 	/*text-decoration: underline;*/
+	-webkit-transition: 0.2s;
 	transition: 0.2s;
 	letter-spacing: 0.8px;
 	/*background-color: hsla(136, 0%, 50%, 0.1);*/
@@ -288,6 +329,7 @@ h1 {
 
 .link:hover {
 	color: /*#3d003d*/ var(--main-colour);
+	-webkit-transition: 0.2s;
 	transition: 0.2s;
 }
 
@@ -297,24 +339,38 @@ h1 {
 ====================*/
 
 .section-two {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: clamp(80px, 6vw, 150px) 0;
 	width: 100vw;
 }
 
 .sec-two-item-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	width: 100%;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .section-two-container {
 	width: 25%;
 	margin: 0 2vw;
+	-webkit-transition: 0.25s;
 	transition: 0.25s;
 	display: block;
 	max-width: 420px;
@@ -328,14 +384,17 @@ h1 {
 
 .sec-two-title {
 	text-align: center;
+	font-size: clamp(18px, 5vw, 30px);
 	font-size: clamp(1.2rem, 5vw, 2rem);
 	font-weight: 500;
 	color: var(--main-colour);
+	margin: clamp(15px, 3vw, 30px) auto;
 	margin: clamp(1rem, 3vw, 2rem) auto;
 }
 
 .sec-two-para {
 	text-align: center;
+	font-size: clamp(15px, 4vw, 19.5px);
 	font-size: clamp(1rem, 4vw, 1.3rem);
     padding: 0 5%;
     letter-spacing: 0.8px;
@@ -347,11 +406,13 @@ h1 {
 .section-two-container:hover {
 	background-color: #363636;
 	color: white;
+	-webkit-transition: 0.25s;
 	transition: 0.25s;
 }
 
 .section-two-container:hover .sec-two-title {
 	color: #cc00cc;
+	-webkit-transition: 0.25s;
 	transition: 0.25s;
 }
 
@@ -364,9 +425,15 @@ h1 {
 	position: relative;
 	height: 100%;
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .sec-three-background {
@@ -376,6 +443,7 @@ h1 {
 .quote {
 	color: white;
 	font-family: 'Merriweather', serif;
+	font-size: clamp(15px, 5vw, 22.5px);
 	font-size: clamp(1rem, 5vw, 1.5rem);
 	text-align: center;
 	width: 90%;
@@ -388,6 +456,7 @@ h1 {
 }
 
 .quote-author {
+	font-size: clamp(9px, 3vw, 12px);
 	font-size: clamp(0.6rem, 3vw, 0.8rem);
 	font-style: italic;
 }
@@ -400,48 +469,79 @@ h1 {
 	width: 100vw;
 	/*max-width: 1400px;*/
     padding: 40px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	/*background-color: #99e6ff;*/
 	margin: clamp(100px, 10vw, 180px) auto 0 auto;
 	border-top: 1px solid #c7c7c7;
 }
 
 .footer-content-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 70%;
 	max-width: 850px;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .footer-links {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-content: space-around;
-	flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: distribute;
+	    align-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .footer-link {
     color: var(--click-colour); /*var(--main-colour)*/;
     padding: 5px 0;
+    font-size: clamp(14.25px, 3vw, 18px);
     font-size: clamp(0.95rem, 3vw, 1.2rem);
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     font-weight: 300;
 }
 
 .footer-link:hover {
 	color: var(--main-colour);
+	-webkit-transition: 0.2s;
 	transition: 0.2s;
 }
 
 .footer-anne {
 	width: 40%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
-	flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .footer-img-link {
@@ -472,9 +572,14 @@ h1 {
 }
 
 .qualification-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 100%;
 	margin-top: 10px;
 }
@@ -513,9 +618,14 @@ h1 {
 }
 
 .fees-body {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	max-width: 800px;
 }
 
@@ -543,6 +653,8 @@ h1 {
 .contact-body {
 	max-width: 800px;
 }
+
+
 
 /*====================
      Media Queries
@@ -580,9 +692,17 @@ h1 {
 @media only screen and (max-width: 650px) {
 
 	.intro-info-container {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
 	}
 	.intro-paragraph {
 		width: 90%;
@@ -604,7 +724,10 @@ h1 {
 	}
 
 	.qualification-container {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.qualification-list {
@@ -619,8 +742,14 @@ h1 {
 @media only screen and (max-width: 350px) {
 
 	.footer-content-container {
-		flex-direction: column;
-		align-items: flex-start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		            -ms-grid-row-align: flex-start;
+		        align-items: flex-start;
 	}
 
 	.footer-links {
