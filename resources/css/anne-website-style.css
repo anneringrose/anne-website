@@ -279,9 +279,9 @@ h1 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     /*width: 70vw;*/
     /*max-width: 1200px;*/
     height: 100%;
@@ -300,8 +300,7 @@ h1 {
 
 .intro-paragraph {
     line-height: 1.3;
-    font-size: clamp(12.75px, 1.5vw, 16.5px);
-    font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
     font-weight: 300;
     color: #262C33;
 }
@@ -309,7 +308,7 @@ h1 {
 .intro-opening {
     font-weight: 700;
     font-size: clamp(13.5px, 1.6vw, 22.5px);
-    font-size: clamp(0.9rem, 1.6vw, 1.5rem);
+    font-size: clamp(1.1rem, 1.6vw, 1.5rem);
     color: #303133;
     font-family: 'Merriweather', serif;
     margin-bottom: 30px;
