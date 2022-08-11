@@ -332,6 +332,26 @@ h1 {
 	transition: 0.2s;
 }
 
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	padding: max(2.2%, 10px);
+    font-weight: 400;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin: 0 auto;
+}
+
+.button:hover {
+	background-color: hsl(195, 100%, 44%, 0.3);
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
 
 /*====================
       Section 2
@@ -548,7 +568,12 @@ h1 {
 }
 
 .footer-img {
-	width: 100%;
+	width: 60%;
+	min-width: 100px;
+}
+
+.footer-img-padding {
+	padding-top: 3%;
 }
 
 /*=====================================================
@@ -584,7 +609,8 @@ h1 {
 }
 
 .qualification-img-link {
-	width: 50%;
+	width: 35%;
+	padding: 2%;
 }
 
 /*========================================
@@ -703,6 +729,7 @@ h1 {
 		            -ms-grid-row-align: center;
 		        align-items: center;
 	}
+
 	.intro-paragraph {
 		width: 90%;
 		margin: 20px auto 40px auto;
@@ -736,6 +763,28 @@ h1 {
 	.mobile-width {
 		width: 100%;
 	}
+
+	.mobile-display {
+		display: flex;
+		justify-content: center;
+	}
+
+	.intro-info-background {
+		background-color: hsla(44, 0%, 100%, .8);
+	    height: 60%;
+	    border-radius: 0px;
+	    width: 100vw;
+    }
+
+    .intro-height {
+ 	    padding: 0;
+    }
+
+    .intro-text {
+    margin: 0 max(1.5vw, 10px);
+}
+
+	
 }
 
 @media only screen and (max-width: 350px) {

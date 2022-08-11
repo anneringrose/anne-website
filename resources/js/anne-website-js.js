@@ -43,7 +43,7 @@ const footerContents = `        <div class="footer-content-container">
             </nav>
             <div class="footer-anne">
                 <h1><a href="./index.html">Anne Ringrose<br>Counselling <span class="header-sub-heading">BA Hons MBACP</span></a></h1>
-                <a href="https://www.bacp.co.uk/" target="_blank" class="footer-img-link"><img src="./resources/images/bacp.png" alt="BACP Logo" class="footer-img"></a>
+                <a href="https://www.bacp.co.uk/" target="_blank" class="footer-img-link"><img src="./resources/images/bacp.png" alt="BACP Logo" class="footer-img footer-img-padding"></a>
             </div>
         </div>`;
 
